@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <title>Angular 2 Solar system</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- 1. Load libraries -->
+     <!-- Polyfill(s) for older browsers -->
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <!-- 2. Configure SystemJS -->
+    <script src="systemjs.config.js"></script>
+    <!--<link rel="stylesheet" href="app/assets/style.css">-->
+    <script>
+      System.import('app').catch(function(err){ console.error(err); });
+    </script>
+  </head>
+  <!-- 3. Display the application -->
+  <body>
+     <div class="container">
+        <div class="row">
+          <h1>PlanetDatabase.com</h1>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <p>Welcome to PlanetDatabase.com </p>
+            <p>Please see the list of planets in our solar system on the right hand side. </p>
+          </div>
+          <div class="col-md-6">
+            <my-app>Loading...</my-app>
+          </div>
+        </div>
+    </div>
+  </body>
+</html>
